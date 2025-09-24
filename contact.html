@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohit Talwar — Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Fixed Navbar -->
+    <header>
+        <nav class="nav container">
+            <div class="brand">Rohit Talwar</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Get in Touch</h1>
+                <p>If you want to collaborate, work together, or just say hi, fill out the form below!</p>
+
+                <!-- Contact Form Container -->
+                <div class="contact-container">
+                    <form onsubmit="handleContact(event)" class="contact-form">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                        <input type="email" id="email" placeholder="Email Address" required>
+                        <input type="tel" id="phone" placeholder="Phone Number" required>
+                        <select id="service" required>
+                            <option value="" disabled selected>What do you want done?</option>
+                            <option value="website">Website</option>
+                            <option value="ux">UX Design</option>
+                            <option value="logo">Logo Creation</option>
+                            <option value="ui">UI Design</option>
+                        </select>
+                        <textarea id="message" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container">
+        <div>© <span id="year"></span> Rohit Talwar — Built with HTML & CSS</div>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+
+        function handleContact(e) {
+            e.preventDefault();
+            alert("Thanks! Your message has been sent.");
+            e.target.reset();
+        }
+    </script>
+</body>
+
+</html>

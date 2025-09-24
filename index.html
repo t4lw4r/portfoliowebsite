@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohit Talwar — Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Fixed Navbar -->
+    <header>
+        <nav class="nav container">
+            <div class="brand">Rohit Talwar</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Hi — I’m Rohit</h1>
+                <p>I design digital experiences & build front-end interfaces.</p>
+
+                <div class="skills-container">
+                    <span class="skill">UX Research</span>
+                    <span class="skill">Figma</span>
+                    <span class="skill">React</span>
+                    <span class="skill">HTML & CSS</span>
+                    <span class="skill">Accessibility</span>
+                </div>
+
+                <div class="ctas">
+                    <a class="btn btn-primary" href="contact.html">Get in Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects-section">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <!-- First Project with classy Figma button -->
+                <div class="project-card">
+                    <div class="project-orb"></div>
+                    <h3>CurrenSea Website UX</h3>
+                    <p>Interactive Figma project — click to view</p>
+                    <a href="https://www.figma.com/file/jaAyEq0764qd3c1vmfRUDk/CurrenSea_Website?node-id=0-1"
+                        target="_blank" class="figma-btn">
+                        View Figma Preview
+                    </a>
+                </div>
+
+                <!-- Empty Project Boxes -->
+                <div class="project-card">
+                    <div class="project-orb"></div>
+                    <h3>Project 2</h3>
+                    <p>Coming soon...</p>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-orb"></div>
+                    <h3>Project 3</h3>
+                    <p>Coming soon...</p>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-orb"></div>
+                    <h3>Project 4</h3>
+                    <p>Coming soon...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container">
+        <div>© <span id="year"></span> Rohit Talwar — Built with HTML & CSS</div>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
