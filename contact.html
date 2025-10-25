@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <!-- Fixed Navbar -->
+
     <header>
         <nav class="nav container">
             <div class="brand">Rohit Talwar</div>
@@ -21,26 +21,21 @@
     </header>
 
     <main>
-        <section class="hero">
+        <section class="contact-hero-cinematic">
+            <div class="particles"></div>
             <div class="hero-text">
-                <h1>Get in Touch</h1>
-                <p>If you want to collaborate, work together, or just say hi, fill out the form below!</p>
+                <h1>Reach Out to the Cosmos</h1>
+                <p>Let’s build something extraordinary together. Drop a message and watch it float through the universe.
+                </p>
 
-                <!-- Contact Form Container -->
-                <div class="contact-container">
+                <div class="contact-container cinematic">
                     <form onsubmit="handleContact(event)" class="contact-form">
                         <input type="text" id="name" placeholder="Your Name" required>
                         <input type="email" id="email" placeholder="Email Address" required>
                         <input type="tel" id="phone" placeholder="Phone Number" required>
-                        <select id="service" required>
-                            <option value="" disabled selected>What do you want done?</option>
-                            <option value="website">Website</option>
-                            <option value="ux">UX Design</option>
-                            <option value="logo">Logo Creation</option>
-                            <option value="ui">UI Design</option>
-                        </select>
+
                         <textarea id="message" placeholder="Your Message" required></textarea>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <button type="submit">Send Message</button>
                     </form>
                 </div>
             </div>
@@ -48,7 +43,7 @@
     </main>
 
     <footer class="container">
-        <div>© <span id="year"></span> Rohit Talwar — Built with HTML & CSS</div>
+        <div>© <span id="year"></span> Rohit Talwar — Crafted with cosmic precision ✨</div>
     </footer>
 
     <script>
@@ -60,6 +55,7 @@
             e.target.reset();
         }
     </script>
+
 </body>
 
 </html>
